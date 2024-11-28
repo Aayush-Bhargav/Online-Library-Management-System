@@ -21,13 +21,33 @@ cd Online-Library-Management-System
 Launch the server first to create a half socket and start listening for connections using
 ```
 gcc server.c
+./a.out
 ```
 Launch the client using
 ```
 gcc client.c
+./a.out
 ```
 Socket connection will be established, and the client and the server can then communicate with each other.
 
+## Running the tester
+To run the tester, execute the following commands.
+First, create an object file for the server.
+```
+gcc -c server.c -o server.o -pthread
+```
+Next, run the following command.
+```
+gcc -DTEST_MODE -c server.c -o server.o -pthread
+```
+Next, compile and link tester.c with server.o
+```
+gcc -o tester tester.c server.c -lcunit -pthread
+```
+Finally, run the tester.
+```
+./tester
+```
 
 ## Client Operations
 
