@@ -7,6 +7,8 @@ Developed an Online Library Management System (OLMS) that not only provides basi
 - The **client.c** file simulates the options available to the clients, either as members or as administrators.  
 - The **server.c** file simulates the server that holds access to all the various types of records about the books, members, and administrators as well as their cart history, etc.
 - The **tester.c** file is used to test the various functionalities.
+- The **common.h** file defines shared structures used by both the client and server for managing data in the library management system. These include definitions for books, members, admins, borrowed books, and index structures for efficient data access.
+- The **server.h** file contains declarations for server-side functions and shared mutex variables, enabling the testing of critical operations such as member and admin sign-up, login, password reset, and book management. 
 
 ## Install and Run
 Clone this repo using
