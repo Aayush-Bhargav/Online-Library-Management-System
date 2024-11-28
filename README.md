@@ -38,7 +38,7 @@ Make sure you have CUnit installed first. The following command is for Ubuntu sy
 sudo apt-get install libcunit1 libcunit1-doc libcunit1-dev
 ```
 
-To run the tester, first, create an object file for the server.
+To run the tester, create an object file for the server.
 ```
 gcc -c server.c -o server.o -pthread
 ```
@@ -48,7 +48,7 @@ gcc -DTEST_MODE -c server.c -o server.o -pthread
 ```
 Next, compile and link **tester.c** with **server.o**
 ```
-gcc -o tester tester.c server.c -lcunit -pthread
+gcc -o tester tester.c server.o -lcunit -pthread
 ```
 Finally, run the tester.
 ```
