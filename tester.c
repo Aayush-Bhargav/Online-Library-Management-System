@@ -900,7 +900,7 @@ int main() {
     }
 
     // Add test suite
-    CU_pSuite suite = CU_add_suite("Member Sign-Up Suite", NULL, NULL);
+    CU_pSuite suite = CU_add_suite("Testing Major Functions", NULL, NULL);
     if (suite == NULL) {
         CU_cleanup_registry();
         return CU_get_error();
