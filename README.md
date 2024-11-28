@@ -14,7 +14,7 @@ git clone https://github.com/Aayush-Bhargav/Online-Library-Management-System.git
 ```
 Go to the right directory using
 ```
-cd Library-Management-System
+cd Online-Library-Management-System
 ```
 ## Launch
 Launch the server first to create a half socket and start listening for connections using
