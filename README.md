@@ -10,7 +10,7 @@ Developed an Online Library Management System (OLMS) that not only provides basi
 ## Install and Run
 Clone this repo using
 ```
-git clone https://github.com/Aayush-Bhargav/Library-Management-System.git
+git clone https://github.com/Aayush-Bhargav/Online-Library-Management-System.git
 ```
 Go to the right directory using
 ```
