@@ -31,8 +31,12 @@ gcc client.c
 Socket connection will be established, and the client and the server can then communicate with each other.
 
 ## Running the tester
-To run the tester, execute the following commands.
-First, create an object file for the server.
+Make sure you have CUnit installed first. The following command is for Ubuntu systems.
+```
+sudo apt-get install libcunit1 libcunit1-doc libcunit1-dev
+```
+
+To run the tester, first, create an object file for the server.
 ```
 gcc -c server.c -o server.o -pthread
 ```
@@ -40,7 +44,7 @@ Next, run the following command.
 ```
 gcc -DTEST_MODE -c server.c -o server.o -pthread
 ```
-Next, compile and link tester.c with server.o
+Next, compile and link **tester.c** with **server.o**
 ```
 gcc -o tester tester.c server.c -lcunit -pthread
 ```
